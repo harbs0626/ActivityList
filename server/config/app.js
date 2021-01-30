@@ -14,7 +14,9 @@ const App = () => {
 
     // ** Initialize routes
     let usersRouter = require('../routes/user');
+    let activityRouter = require('../routes/activity');
     app.use('/api/user', usersRouter);
+    app.use('/api/activity', activityRouter);
 
     // ** Error handling
     app.use((req, res, next) => {
