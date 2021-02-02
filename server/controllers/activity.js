@@ -18,8 +18,8 @@ module.exports.processAddEntry = (req, res, next) => {
     Activity.create(newActivity, (err, Activity) => {
         if (err) {
             console.log("[Error Summary] - Unable to add new entry:");
-            console.log(`- ${err.name}`);
-            return res.json({ success: false, msg: `${err.name}` });
+            console.log(`- ${err}`);
+            return res.json({ success: false, msg: `${err}` });
         } else {
             return res.json({ success: true, msg: 'Successfully added new entry.' });
         }
