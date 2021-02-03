@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-let database = require('../config/db');
+let database = require('./db');
 
 const ConnectToDB = () => {
     mongoose.connect(
